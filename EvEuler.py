@@ -3,7 +3,7 @@ from math import sqrt
 def AllFactors(number):
    allfactors = []
    topnumber = number
-   i = 2
+   i = 1 
    while i < topnumber:
       if number % i == 0:
          allfactors.append(i)
@@ -11,8 +11,7 @@ def AllFactors(number):
          topnumber = number/i
       i = i + 1
    allfactors.sort()
-   print allfactors
-
+   return allfactors
 
 #primefactors returns all prime factors such that
 #multiplying all elements of the list together
