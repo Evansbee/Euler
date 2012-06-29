@@ -15,7 +15,7 @@ def AllFactors(number):
    if allfactors.count(number) > 0:
       allfactors.remove(number)
    allfactors.sort()
-   return allfactors
+   return list(set(allfactors))
 
 #primefactors returns all prime factors such that
 #multiplying all elements of the list together
