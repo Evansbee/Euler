@@ -3,6 +3,8 @@ from math import sqrt
 def AllFactors(number):
    allfactors = []
    topnumber = number
+   if number == 1:
+      return [1]
    i = 1 
    while i < topnumber:
       if number % i == 0:
@@ -10,6 +12,8 @@ def AllFactors(number):
          allfactors.append(number/i)
          topnumber = number/i
       i = i + 1
+   if allfactors.count(number) > 0:
+      allfactors.remove(number)
    allfactors.sort()
    return allfactors
 
