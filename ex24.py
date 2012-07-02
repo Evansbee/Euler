@@ -1,3 +1,5 @@
+import sys
+
 
 base = [0,1,2,3,4,5,6,7,8,9]
 count = 1
@@ -41,5 +43,9 @@ for a in range(10):
    				       p10 = list(p9)
                                        p10.remove(p9[i])
                                        entry += str(p10[j])
-                                       print "%d - %s" %(count,entry)
+                                       if count == 1000000:
+                                          print entry
+                                          sys.exit(0)
                                        count += 1
+
+
