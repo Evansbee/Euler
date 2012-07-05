@@ -1,5 +1,11 @@
 from math import sqrt
 
+def irange(p1, p2=None, p3=1):
+   if p2 == None:
+      return range(0,p1+p3,p3)
+   else:
+      return range(p1,p2+p3,p3)
+
 def AllFactors(number):
    allfactors = []
    topnumber = number
