@@ -41,6 +41,13 @@ def PrimeFactors(number):
    primefactors.append(number)
    return primefactors
 
+
+def IsPrime(num):
+   if num < 1:
+      return False
+   factors = PrimeFactors(num)
+   return len(factors) == 1 and factors[0] == num 
+
 def ListOfPrimes(number):
    primelist = []
    return primelist
